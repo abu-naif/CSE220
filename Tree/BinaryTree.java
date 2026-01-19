@@ -1,4 +1,4 @@
-public class BinaryTreeYt{
+public class BinaryTree{
     static class Node{
         int data;
         Node left;
@@ -9,7 +9,7 @@ public class BinaryTreeYt{
             this.right=null;
         }
     }
-    static class BinaryTree{
+    static class Tree{
         static int ind=-1;
         public static Node buildtree(int nodes[]){
             ind++;
@@ -48,7 +48,7 @@ public class BinaryTreeYt{
     }
     public static void main(String[] args) {
         int nodes[]={1,2,4,-1,-1,5,-1,-1,3,-1,6,-1,-1};
-        BinaryTree tree= new BinaryTree();
+        Tree tree= new Tree();
         Node root=tree.buildtree(nodes);
         //System.out.println(root.data);
         preorder(root);
